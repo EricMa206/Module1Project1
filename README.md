@@ -1,9 +1,9 @@
 # Module1 Project1
 
-![Flation School](FlatironSchool.png)
-## Flatiron School
-### Eric Ma: Data Analyst
-
+# ![Flation School](FlatironSchool.png)     **Flatiron School**
+#### *Eric Ma: Data Analyst*
+#### *May 8 2019*
+---
 ### King County 2014-15 Housing Data
 
 Creating the model of the 2014-15 King County Housing Data. Lets look at where
@@ -31,8 +31,8 @@ lists latitude and longitude values for every zip code in the US
 
 I was concerned about multicolinearity. With so many data points theres just too
 much dependencies. This is particularly true for subjective measures like view,
-and grade. People who report a better grade will be more likely to pay more for
-living square footage. My observations showed that 'bathrooms', 'grade',
+and grade. People who report a better grade will be more likely to be looking at
+a spacious waterfront view. My observations showed that 'bathrooms', 'grade',
 'sqft_above', 'sqft_basement', 'sqft_living15', 'sqft_lot15' were all
 significantly colinear (corr > 0.7). I dropped those values. In the future I
 would prefer to deal with them differently. The Scikit Learn model assumes in
@@ -52,6 +52,9 @@ different context to the working class than it does to the billionaire class.
 ![Log Price](LogPrice.jpg)
 
 ### My model
+After the log transform my model performed much better. The variables left to
+descern are 'bedrooms', 'sqft_living', 'sqft_lot','floors', 'view', 'condition',
+'waterfront', 'lat', 'long'.
 
 ![The Model](TheModel.jpg)
 
