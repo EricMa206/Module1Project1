@@ -67,3 +67,4 @@ with MSE of 0.301. That does not mean the model is shockingly predictive. Log
 scaling the target also log scales the errors making the MSE meaningless until
 adjusted. In the future I will look into feature scaling to exponentials rather
 than target scaling.
+# Module2
